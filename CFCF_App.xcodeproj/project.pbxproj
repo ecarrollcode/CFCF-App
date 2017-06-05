@@ -7,13 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F5203BE1ED6504D0021A6DE /* LearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5203BD1ED6504D0021A6DE /* LearnViewController.swift */; };
+		8F5203C01ED66A180021A6DE /* TrainingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5203BF1ED66A180021A6DE /* TrainingViewController.swift */; };
 		8F9F93AC1ED2989200FC15C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F93AB1ED2989200FC15C9 /* AppDelegate.swift */; };
-		8F9F93AE1ED2989200FC15C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F93AD1ED2989200FC15C9 /* ViewController.swift */; };
+		8F9F93AE1ED2989200FC15C9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F93AD1ED2989200FC15C9 /* HomeViewController.swift */; };
 		8F9F93B11ED2989200FC15C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F9F93AF1ED2989200FC15C9 /* Main.storyboard */; };
 		8F9F93B31ED2989200FC15C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F9F93B21ED2989200FC15C9 /* Assets.xcassets */; };
 		8F9F93B61ED2989200FC15C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F9F93B41ED2989200FC15C9 /* LaunchScreen.storyboard */; };
 		8F9F93C11ED2989200FC15C9 /* CFCF_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F93C01ED2989200FC15C9 /* CFCF_AppTests.swift */; };
 		8F9F93CC1ED2989200FC15C9 /* CFCF_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F93CB1ED2989200FC15C9 /* CFCF_AppUITests.swift */; };
+		8F9F93DA1ED299AC00FC15C9 /* cfcf_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F9F93D91ED299AC00FC15C9 /* cfcf_logo.jpg */; };
+		8F9F93DC1ED29AB200FC15C9 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F93DB1ED29AB200FC15C9 /* ShareViewController.swift */; };
+		8F9F93DE1ED29BB300FC15C9 /* ShareHotlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F93DD1ED29BB300FC15C9 /* ShareHotlineViewController.swift */; };
+		8F9F93E01ED29C3100FC15C9 /* HotlineData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F93DF1ED29C3100FC15C9 /* HotlineData.swift */; };
+		8F9F93E21ED29DF700FC15C9 /* ShareCaliHotlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F93E11ED29DF600FC15C9 /* ShareCaliHotlineViewController.swift */; };
+		8F9F93E41ED29FB400FC15C9 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F93E31ED29FB400FC15C9 /* ReportViewController.swift */; };
+		8F9F93E61ED2A2A600FC15C9 /* ReportCaliViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F93E51ED2A2A600FC15C9 /* ReportCaliViewController.swift */; };
+		8FC5CC481EDA6E51007628E2 /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FC5CC471EDA6E50007628E2 /* Slide.xib */; };
+		8FC5CC4A1EDA6E6D007628E2 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC5CC491EDA6E6D007628E2 /* Slide.swift */; };
+		8FF10D281EDF62B500B29728 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF10D271EDF62B500B29728 /* GuideViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +46,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8F5203BD1ED6504D0021A6DE /* LearnViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnViewController.swift; sourceTree = "<group>"; };
+		8F5203BF1ED66A180021A6DE /* TrainingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingViewController.swift; sourceTree = "<group>"; };
 		8F9F93A81ED2989200FC15C9 /* CFCF_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CFCF_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F9F93AB1ED2989200FC15C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8F9F93AD1ED2989200FC15C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8F9F93AD1ED2989200FC15C9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8F9F93B01ED2989200FC15C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8F9F93B21ED2989200FC15C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F9F93B51ED2989200FC15C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +61,16 @@
 		8F9F93C71ED2989200FC15C9 /* CFCF_AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CFCF_AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F9F93CB1ED2989200FC15C9 /* CFCF_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFCF_AppUITests.swift; sourceTree = "<group>"; };
 		8F9F93CD1ED2989200FC15C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F9F93D91ED299AC00FC15C9 /* cfcf_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cfcf_logo.jpg; path = ../../Documents/cfcf_logo.jpg; sourceTree = "<group>"; };
+		8F9F93DB1ED29AB200FC15C9 /* ShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		8F9F93DD1ED29BB300FC15C9 /* ShareHotlineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareHotlineViewController.swift; sourceTree = "<group>"; };
+		8F9F93DF1ED29C3100FC15C9 /* HotlineData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotlineData.swift; sourceTree = "<group>"; };
+		8F9F93E11ED29DF600FC15C9 /* ShareCaliHotlineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareCaliHotlineViewController.swift; sourceTree = "<group>"; };
+		8F9F93E31ED29FB400FC15C9 /* ReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
+		8F9F93E51ED2A2A600FC15C9 /* ReportCaliViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportCaliViewController.swift; sourceTree = "<group>"; };
+		8FC5CC471EDA6E50007628E2 /* Slide.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
+		8FC5CC491EDA6E6D007628E2 /* Slide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
+		8FF10D271EDF62B500B29728 /* GuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GuideViewController.swift; path = ../GuideViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +121,20 @@
 		8F9F93AA1ED2989200FC15C9 /* CFCF_App */ = {
 			isa = PBXGroup;
 			children = (
+				8FC5CC461EDA6E35007628E2 /* View */,
 				8F9F93AB1ED2989200FC15C9 /* AppDelegate.swift */,
-				8F9F93AD1ED2989200FC15C9 /* ViewController.swift */,
+				8F9F93AD1ED2989200FC15C9 /* HomeViewController.swift */,
 				8F9F93AF1ED2989200FC15C9 /* Main.storyboard */,
+				8F5203BF1ED66A180021A6DE /* TrainingViewController.swift */,
+				8F9F93DB1ED29AB200FC15C9 /* ShareViewController.swift */,
+				8FF10D271EDF62B500B29728 /* GuideViewController.swift */,
+				8F9F93DD1ED29BB300FC15C9 /* ShareHotlineViewController.swift */,
+				8F9F93E11ED29DF600FC15C9 /* ShareCaliHotlineViewController.swift */,
+				8F9F93E31ED29FB400FC15C9 /* ReportViewController.swift */,
+				8F9F93E51ED2A2A600FC15C9 /* ReportCaliViewController.swift */,
+				8F5203BD1ED6504D0021A6DE /* LearnViewController.swift */,
+				8F9F93DF1ED29C3100FC15C9 /* HotlineData.swift */,
+				8F9F93D91ED299AC00FC15C9 /* cfcf_logo.jpg */,
 				8F9F93B21ED2989200FC15C9 /* Assets.xcassets */,
 				8F9F93B41ED2989200FC15C9 /* LaunchScreen.storyboard */,
 				8F9F93B71ED2989200FC15C9 /* Info.plist */,
@@ -123,6 +158,15 @@
 				8F9F93CD1ED2989200FC15C9 /* Info.plist */,
 			);
 			path = CFCF_AppUITests;
+			sourceTree = "<group>";
+		};
+		8FC5CC461EDA6E35007628E2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8FC5CC471EDA6E50007628E2 /* Slide.xib */,
+				8FC5CC491EDA6E6D007628E2 /* Slide.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,8 +279,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FC5CC481EDA6E51007628E2 /* Slide.xib in Resources */,
 				8F9F93B61ED2989200FC15C9 /* LaunchScreen.storyboard in Resources */,
 				8F9F93B31ED2989200FC15C9 /* Assets.xcassets in Resources */,
+				8F9F93DA1ED299AC00FC15C9 /* cfcf_logo.jpg in Resources */,
 				8F9F93B11ED2989200FC15C9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,8 +308,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F9F93AE1ED2989200FC15C9 /* ViewController.swift in Sources */,
+				8F5203C01ED66A180021A6DE /* TrainingViewController.swift in Sources */,
+				8F9F93E01ED29C3100FC15C9 /* HotlineData.swift in Sources */,
+				8F9F93E21ED29DF700FC15C9 /* ShareCaliHotlineViewController.swift in Sources */,
+				8F5203BE1ED6504D0021A6DE /* LearnViewController.swift in Sources */,
+				8F9F93DE1ED29BB300FC15C9 /* ShareHotlineViewController.swift in Sources */,
+				8FF10D281EDF62B500B29728 /* GuideViewController.swift in Sources */,
+				8F9F93DC1ED29AB200FC15C9 /* ShareViewController.swift in Sources */,
+				8F9F93AE1ED2989200FC15C9 /* HomeViewController.swift in Sources */,
+				8FC5CC4A1EDA6E6D007628E2 /* Slide.swift in Sources */,
+				8F9F93E61ED2A2A600FC15C9 /* ReportCaliViewController.swift in Sources */,
 				8F9F93AC1ED2989200FC15C9 /* AppDelegate.swift in Sources */,
+				8F9F93E41ED29FB400FC15C9 /* ReportViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +570,7 @@
 				8F9F93D21ED2989200FC15C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8F9F93D31ED2989200FC15C9 /* Build configuration list for PBXNativeTarget "CFCF_AppTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +579,7 @@
 				8F9F93D51ED2989200FC15C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8F9F93D61ED2989200FC15C9 /* Build configuration list for PBXNativeTarget "CFCF_AppUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +588,7 @@
 				8F9F93D81ED2989200FC15C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

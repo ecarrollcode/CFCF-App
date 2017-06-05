@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Slide" customModule="CFCF_App">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Header" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DMw-lT-cC1">
+                    <rect key="frame" x="52" y="54" width="271" height="101"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="101" id="FMR-fX-LO9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Content" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glX-tJ-WMK">
+                    <rect key="frame" x="58" y="224" width="258" height="284"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="284" id="Vfr-d3-SRN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JO6-6U-7qM">
+                    <rect key="frame" x="16" y="15" width="69" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="69" id="0t6-pj-eTn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.96470588235294119" green="0.90196078430000004" blue="0.76767925922721092" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="JO6-6U-7qM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="6iv-yG-q8r"/>
+                <constraint firstAttribute="bottom" secondItem="glX-tJ-WMK" secondAttribute="bottom" constant="159" id="CEt-iL-cOE"/>
+                <constraint firstItem="DMw-lT-cC1" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="GZz-Nr-f18"/>
+                <constraint firstItem="DMw-lT-cC1" firstAttribute="top" secondItem="JO6-6U-7qM" secondAttribute="bottom" constant="8" symbolic="YES" id="bd3-HG-F6H"/>
+                <constraint firstItem="DMw-lT-cC1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="54" id="cGW-Qq-8D8"/>
+                <constraint firstItem="DMw-lT-cC1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="52" id="iAJ-GZ-b5n"/>
+                <constraint firstItem="glX-tJ-WMK" firstAttribute="centerX" secondItem="DMw-lT-cC1" secondAttribute="centerX" id="oTb-gx-TXr"/>
+                <constraint firstItem="glX-tJ-WMK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="58" id="u8o-tt-pRz"/>
+                <constraint firstItem="JO6-6U-7qM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="wty-Pf-aki"/>
+            </constraints>
+            <connections>
+                <outlet property="content" destination="glX-tJ-WMK" id="ff4-3Z-onS"/>
+                <outlet property="header" destination="DMw-lT-cC1" id="xJr-xm-QB6"/>
+                <outlet property="slideNumLabel" destination="JO6-6U-7qM" id="Jxx-z4-w4G"/>
+            </connections>
+            <point key="canvasLocation" x="35.5" y="53.5"/>
+        </view>
+    </objects>
+</document>
