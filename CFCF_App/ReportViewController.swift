@@ -21,11 +21,17 @@ class ReportViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         // initial dial number + selection set for California
         isCalifornia = true
         callOrUrlButton.setTitle("Select a county", for: [.normal])
         statePicker.selectRow(4, inComponent: 0, animated: true)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if SegueHelper.takeToReport {
+            SegueHelper.takeToReport = false
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -66,7 +72,7 @@ class ReportViewController: UIViewController {
     
     @IBAction func callOrUrlButton(_ sender: Any) {
         if isCalifornia {
-            self.performSegue(withIdentifier: "reportCaliSegue", sender: nil)
+            self.performSegue(withIdentifier: "toReportCaliSegue", sender: nil)
             return
         }
         

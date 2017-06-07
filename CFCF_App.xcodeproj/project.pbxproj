@@ -48,7 +48,7 @@
 /* Begin PBXFileReference section */
 		8F5203BD1ED6504D0021A6DE /* LearnViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnViewController.swift; sourceTree = "<group>"; };
 		8F5203BF1ED66A180021A6DE /* TrainingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingViewController.swift; sourceTree = "<group>"; };
-		8F9F93A81ED2989200FC15C9 /* CFCF_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CFCF_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F9F93A81ED2989200FC15C9 /* CFCF App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CFCF App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F9F93AB1ED2989200FC15C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F9F93AD1ED2989200FC15C9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8F9F93B01ED2989200FC15C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 		8F9F93E51ED2A2A600FC15C9 /* ReportCaliViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportCaliViewController.swift; sourceTree = "<group>"; };
 		8FC5CC471EDA6E50007628E2 /* Slide.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
 		8FC5CC491EDA6E6D007628E2 /* Slide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
-		8FF10D271EDF62B500B29728 /* GuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GuideViewController.swift; path = ../GuideViewController.swift; sourceTree = "<group>"; };
+		8FF10D271EDF62B500B29728 /* GuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +111,7 @@
 		8F9F93A91ED2989200FC15C9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8F9F93A81ED2989200FC15C9 /* CFCF_App.app */,
+				8F9F93A81ED2989200FC15C9 /* CFCF App.app */,
 				8F9F93BC1ED2989200FC15C9 /* CFCF_AppTests.xctest */,
 				8F9F93C71ED2989200FC15C9 /* CFCF_AppUITests.xctest */,
 			);
@@ -186,7 +186,7 @@
 			);
 			name = CFCF_App;
 			productName = CFCF_App;
-			productReference = 8F9F93A81ED2989200FC15C9 /* CFCF_App.app */;
+			productReference = 8F9F93A81ED2989200FC15C9 /* CFCF App.app */;
 			productType = "com.apple.product-type.application";
 		};
 		8F9F93BB1ED2989200FC15C9 /* CFCF_AppTests */ = {
@@ -472,10 +472,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4Q43WW846Q;
+				GCC_WARN_UNUSED_VALUE = YES;
+				IBC_WARNINGS = YES;
+				IBSC_WARNINGS = NO;
 				INFOPLIST_FILE = CFCF_App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.CFCF-App";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "CFCF App";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -485,10 +488,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4Q43WW846Q;
+				GCC_WARN_UNUSED_VALUE = YES;
+				IBC_WARNINGS = YES;
+				IBSC_WARNINGS = NO;
 				INFOPLIST_FILE = CFCF_App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.CFCF-App";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "CFCF App";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

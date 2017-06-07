@@ -43,15 +43,15 @@ class ShareHotlineViewController: UIViewController, MFMessageComposeViewControll
         return 1
     }
     
-    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return HotlineData.stateNames.count
     }
     
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return HotlineData.stateNames[row]
     }
     
-    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         let itemSelected = HotlineData.stateNames[row]
         let phoneDictValue = HotlineData.stateInfosPhoneDict[itemSelected]
         let webDictValue = HotlineData.stateInfosWebDict[itemSelected]
@@ -80,7 +80,7 @@ class ShareHotlineViewController: UIViewController, MFMessageComposeViewControll
     
     @IBAction func sendHotline(_ sender: Any) {
         if isCalifornia {
-            self.performSegue(withIdentifier: "shareCaliSegue", sender: nil)
+            self.performSegue(withIdentifier: "toShareCaliSegue", sender: nil)
             return
         }
         

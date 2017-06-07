@@ -18,8 +18,13 @@ class LearnViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if SegueHelper.takeToReport {
+            performSegue(withIdentifier: "undwindSegueToHomeVC", sender: nil)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,7 +42,7 @@ class LearnViewController: UIViewController {
         }
     }
     
-    @IBAction func unwindeToLearnVC(segue: UIStoryboardSegue) { }
+    @IBAction func unwindToLearnVC(segue: UIStoryboardSegue) {}
 
     /*
     // MARK: - Navigation
