@@ -18,7 +18,11 @@ class HomeViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         if SegueHelper.takeToReport {
-            performSegue(withIdentifier: "toReportSegue", sender: nil)
+            // delay segue by a second
+            let when = DispatchTime.now() + 0.25
+            DispatchQueue.main.asyncAfter(deadline: when) {
+                self.performSegue(withIdentifier: "toReportSegue", sender: nil)
+            }
         }
     }
 

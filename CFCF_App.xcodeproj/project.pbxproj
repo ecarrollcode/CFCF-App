@@ -48,6 +48,7 @@
 /* Begin PBXFileReference section */
 		8F5203BD1ED6504D0021A6DE /* LearnViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnViewController.swift; sourceTree = "<group>"; };
 		8F5203BF1ED66A180021A6DE /* TrainingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingViewController.swift; sourceTree = "<group>"; };
+		8F57FEC41EE78FFB000C3196 /* SwiftOverlays.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftOverlays.framework; path = Carthage/Build/iOS/SwiftOverlays.framework; sourceTree = "<group>"; };
 		8F9F93A81ED2989200FC15C9 /* CFCF App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CFCF App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F9F93AB1ED2989200FC15C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F9F93AD1ED2989200FC15C9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +99,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F57FEC31EE78FFB000C3196 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F57FEC41EE78FFB000C3196 /* SwiftOverlays.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8F9F939F1ED2989200FC15C9 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +114,7 @@
 				8F9F93BF1ED2989200FC15C9 /* CFCF_AppTests */,
 				8F9F93CA1ED2989200FC15C9 /* CFCF_AppUITests */,
 				8F9F93A91ED2989200FC15C9 /* Products */,
+				8F57FEC31EE78FFB000C3196 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -472,12 +482,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4Q43WW846Q;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CFCF_App",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GCC_WARN_UNUSED_VALUE = YES;
 				IBC_WARNINGS = YES;
 				IBSC_WARNINGS = NO;
 				INFOPLIST_FILE = CFCF_App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.CFCF-App";
+				PRODUCT_BUNDLE_IDENTIFIER = "CFCF-App";
 				PRODUCT_NAME = "CFCF App";
 				SWIFT_VERSION = 3.0;
 			};
@@ -488,12 +504,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4Q43WW846Q;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CFCF_App",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GCC_WARN_UNUSED_VALUE = YES;
 				IBC_WARNINGS = YES;
 				IBSC_WARNINGS = NO;
 				INFOPLIST_FILE = CFCF_App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.CFCF-App";
+				PRODUCT_BUNDLE_IDENTIFIER = "CFCF-App";
 				PRODUCT_NAME = "CFCF App";
 				SWIFT_VERSION = 3.0;
 			};

@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8F9F93A71ED2989200FC15C9"
-               BuildableName = "CFCF_App.app"
+               BuildableName = "CFCF App.app"
                BlueprintName = "CFCF_App"
                ReferencedContainer = "container:CFCF_App.xcodeproj">
             </BuildableReference>
@@ -53,7 +53,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8F9F93A71ED2989200FC15C9"
-            BuildableName = "CFCF_App.app"
+            BuildableName = "CFCF App.app"
             BlueprintName = "CFCF_App"
             ReferencedContainer = "container:CFCF_App.xcodeproj">
          </BuildableReference>
@@ -65,7 +65,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      launchStyle = "1"
+      launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8F9F93A71ED2989200FC15C9"
-            BuildableName = "CFCF_App.app"
+            BuildableName = "CFCF App.app"
             BlueprintName = "CFCF_App"
             ReferencedContainer = "container:CFCF_App.xcodeproj">
          </BuildableReference>
@@ -95,7 +95,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8F9F93A71ED2989200FC15C9"
-            BuildableName = "CFCF_App.app"
+            BuildableName = "CFCF App.app"
             BlueprintName = "CFCF_App"
             ReferencedContainer = "container:CFCF_App.xcodeproj">
          </BuildableReference>

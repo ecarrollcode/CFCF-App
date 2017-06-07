@@ -10,7 +10,6 @@ import UIKit
 
 class LearnViewController: UIViewController {
     
-    
     @IBOutlet weak var youtubeButton: UIButton!
     /* Training and Guide buttons will probably lead to other screens,
       thus no need for IBOutlets/Actions */
@@ -23,7 +22,11 @@ class LearnViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         if SegueHelper.takeToReport {
-            performSegue(withIdentifier: "undwindSegueToHomeVC", sender: nil)
+            // delay segue by a second
+            let when = DispatchTime.now() + 0.25
+            DispatchQueue.main.asyncAfter(deadline: when) {
+                self.performSegue(withIdentifier: "undwindSegueToHomeVC", sender: nil)
+            }
         }
     }
 
@@ -33,8 +36,7 @@ class LearnViewController: UIViewController {
     }
     
     @IBAction func youtubeButton(_ sender: Any) {
-        // url to YouTube channel will go here
-        let url = NSURL(string: "")! as URL
+        let url = NSURL(string: "https://www.youtube.com/watch?v=HVRlOiC1uss&list=PLf3DiW4XOaaYSDATIc4tu7aSSfdbd8sej")! as URL
         if #available(iOS 10.0, *) {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
         } else {

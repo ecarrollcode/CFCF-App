@@ -56,9 +56,9 @@
                                 <exclude reference="Enc-xO-F0a"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="phf-JG-rUU"/>
                                 <exclude reference="8VN-E9-iZy"/>
                                 <exclude reference="D4x-RT-M86"/>
+                                <exclude reference="phf-JG-rUU"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
@@ -67,9 +67,9 @@
                                 <include reference="Enc-xO-F0a"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="phf-JG-rUU"/>
                                 <include reference="8VN-E9-iZy"/>
                                 <include reference="D4x-RT-M86"/>
+                                <include reference="phf-JG-rUU"/>
                             </mask>
                         </variation>
                     </view>
