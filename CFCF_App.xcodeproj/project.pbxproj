@@ -16,7 +16,6 @@
 		8F9F93B61ED2989200FC15C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F9F93B41ED2989200FC15C9 /* LaunchScreen.storyboard */; };
 		8F9F93C11ED2989200FC15C9 /* CFCF_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F93C01ED2989200FC15C9 /* CFCF_AppTests.swift */; };
 		8F9F93CC1ED2989200FC15C9 /* CFCF_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F93CB1ED2989200FC15C9 /* CFCF_AppUITests.swift */; };
-		8F9F93DA1ED299AC00FC15C9 /* cfcf_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F9F93D91ED299AC00FC15C9 /* cfcf_logo.jpg */; };
 		8F9F93DC1ED29AB200FC15C9 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F93DB1ED29AB200FC15C9 /* ShareViewController.swift */; };
 		8F9F93DE1ED29BB300FC15C9 /* ShareHotlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F93DD1ED29BB300FC15C9 /* ShareHotlineViewController.swift */; };
 		8F9F93E01ED29C3100FC15C9 /* HotlineData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F93DF1ED29C3100FC15C9 /* HotlineData.swift */; };
@@ -62,7 +61,6 @@
 		8F9F93C71ED2989200FC15C9 /* CFCF_AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CFCF_AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F9F93CB1ED2989200FC15C9 /* CFCF_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFCF_AppUITests.swift; sourceTree = "<group>"; };
 		8F9F93CD1ED2989200FC15C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8F9F93D91ED299AC00FC15C9 /* cfcf_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cfcf_logo.jpg; path = ../../Documents/cfcf_logo.jpg; sourceTree = "<group>"; };
 		8F9F93DB1ED29AB200FC15C9 /* ShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		8F9F93DD1ED29BB300FC15C9 /* ShareHotlineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareHotlineViewController.swift; sourceTree = "<group>"; };
 		8F9F93DF1ED29C3100FC15C9 /* HotlineData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotlineData.swift; sourceTree = "<group>"; };
@@ -144,7 +142,6 @@
 				8F9F93E51ED2A2A600FC15C9 /* ReportCaliViewController.swift */,
 				8F5203BD1ED6504D0021A6DE /* LearnViewController.swift */,
 				8F9F93DF1ED29C3100FC15C9 /* HotlineData.swift */,
-				8F9F93D91ED299AC00FC15C9 /* cfcf_logo.jpg */,
 				8F9F93B21ED2989200FC15C9 /* Assets.xcassets */,
 				8F9F93B41ED2989200FC15C9 /* LaunchScreen.storyboard */,
 				8F9F93B71ED2989200FC15C9 /* Info.plist */,
@@ -292,7 +289,6 @@
 				8FC5CC481EDA6E51007628E2 /* Slide.xib in Resources */,
 				8F9F93B61ED2989200FC15C9 /* LaunchScreen.storyboard in Resources */,
 				8F9F93B31ED2989200FC15C9 /* Assets.xcassets in Resources */,
-				8F9F93DA1ED299AC00FC15C9 /* cfcf_logo.jpg in Resources */,
 				8F9F93B11ED2989200FC15C9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

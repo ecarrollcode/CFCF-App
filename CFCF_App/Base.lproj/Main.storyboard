@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -24,10 +25,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cfcf_logo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="15r-ZX-Y5r">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cfcf_logo" translatesAutoresizingMaskIntoConstraints="NO" id="15r-ZX-Y5r">
                                 <rect key="frame" x="98" y="197" width="180" height="166"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="180" id="XV0-du-JqI"/>
+                                    <constraint firstAttribute="width" secondItem="15r-ZX-Y5r" secondAttribute="height" multiplier="90:83" id="ZrY-eC-HSc"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -794,9 +796,10 @@ case of child abuse.</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cfcf_logo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="GyP-Bv-gC2">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cfcf_logo" translatesAutoresizingMaskIntoConstraints="NO" id="GyP-Bv-gC2">
                                 <rect key="frame" x="98" y="197" width="180" height="166"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" secondItem="GyP-Bv-gC2" secondAttribute="height" multiplier="90:83" id="5TA-NF-tH9"/>
                                     <constraint firstAttribute="width" constant="180" id="KDp-FC-ldu"/>
                                 </constraints>
                                 <variation key="default">
@@ -918,7 +921,7 @@ case of child abuse.</string>
         </scene>
     </scenes>
     <resources>
-        <image name="cfcf_logo.jpg" width="166" height="166"/>
+        <image name="cfcf_logo" width="850" height="850"/>
     </resources>
     <color key="tintColor" red="0.32847653491599527" green="0.61189216375350952" blue="0.34276005699678636" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
