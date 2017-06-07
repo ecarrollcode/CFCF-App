@@ -139,10 +139,6 @@ class GuideViewController: UIViewController {
                 self.viewDidLoad() // refresh the view
                 return
             }
-            
-            if pulseQuestionText! {
-                self.fadeIn(btn1Text: btn1Text, btn2Text: btn2Text, questionLabelText: questionLabelText, pulseQuestionText: true)
-            }
         })
     }
     
