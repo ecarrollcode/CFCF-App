@@ -24,9 +24,8 @@ class ShareViewController: UIViewController, MFMessageComposeViewControllerDeleg
         let messageVC = MFMessageComposeViewController()
         
         messageVC.body = "Help stop child abuse. " +
-                         "Learn more by downloading this app from the Corina Field Carroll Fund: ";
-                         // URL GOES HERE //
-//                         "https://itunes.apple.com/us/app/childrens-advocacy-center/id1075992273?mt=8";
+                         "Learn more by downloading this app from the Corina Field Carroll Fund: " +
+                         "https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1245542351&mt=8";
         messageVC.recipients = [" "];
         messageVC.messageComposeDelegate = self;
         

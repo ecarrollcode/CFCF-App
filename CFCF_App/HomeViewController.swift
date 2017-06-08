@@ -16,12 +16,21 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.view.isUserInteractionEnabled = true
+        if SegueHelper.takeToReport {
+            // temporarily disable user interaction
+            self.view.isUserInteractionEnabled = false
+        }
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         if SegueHelper.takeToReport {
             // delay segue by a second
             let when = DispatchTime.now() + 0.25
             DispatchQueue.main.asyncAfter(deadline: when) {
                 self.performSegue(withIdentifier: "toReportSegue", sender: nil)
+                return
             }
         }
     }
