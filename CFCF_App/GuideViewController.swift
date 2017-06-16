@@ -25,8 +25,6 @@ class GuideViewController: UIViewController {
     var takeToLearnOrContinue = Bool()
     var takeToReport = Bool()
     
-    typealias MethodHandler = ()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -180,7 +178,7 @@ class GuideViewController: UIViewController {
             
             if questionNum == 0 {
                 questionNum = 1
-                let question1Text = "Are you using this guide because you have specific concerns about a specific child?"
+                let question1Text = "Are you using this guide because you have specific concerns about one specific child?"
                 UIView.animate(withDuration: 1.5, delay: 0, options: .curveLinear, animations: {
                     self.welcomeLabel.alpha = 0
                     self.restOfWelcomeLabel.alpha = 0

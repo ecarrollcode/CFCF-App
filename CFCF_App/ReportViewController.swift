@@ -80,32 +80,20 @@ class ReportViewController: UIViewController {
         let charSet = CharacterSet(charactersIn: "1234567890").inverted
         let unformatted = callOrUrlButton.currentTitle
         let cleanedString = unformatted!.components(separatedBy: charSet).joined(separator: "")
+        let number = URL(string: "tel://" + cleanedString)
         
-        // create and configure alert controller
-        let alertController = UIAlertController(title: unformatted, message: "", preferredStyle: .alert)
-        
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-        let callAction = UIAlertAction(title: "Call", style: .default) { (action) in
-            let number = NSURL(string: "tel://" + cleanedString)! as URL
+        if !urlString.isEmpty {
+            let url = NSURL(string: self.urlString)! as URL
             if #available(iOS 10.0, *) {
-                UIApplication.shared.open(number, options: [:], completionHandler: nil)
-            } else {
-                UIApplication.shared.openURL(number)
-            }
-    
-        }
-        
-        alertController.addAction(cancelAction)
-        alertController.addAction(callAction)
-        
-        if urlString.isEmpty {
-            self.present(alertController, animated: true, completion: nil)
-        } else {
-            let url = NSURL(string: urlString)! as URL
-            if #available(iOS 10.0, *) {
-                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                UIApplication.shared.open(url)
             } else {
                 UIApplication.shared.openURL(url)
+            }
+        } else {
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(number!)
+            } else {
+                UIApplication.shared.openURL(number!)
             }
         }
     }

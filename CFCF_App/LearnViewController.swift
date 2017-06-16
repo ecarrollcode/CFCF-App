@@ -10,6 +10,7 @@ import UIKit
 
 class LearnViewController: UIViewController {
     
+    @IBOutlet weak var cfcfButton: UIButton!
     @IBOutlet weak var youtubeButton: UIButton!
     /* Training and Guide buttons will probably lead to other screens,
       thus no need for IBOutlets/Actions */
@@ -43,6 +44,26 @@ class LearnViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func cfcfButton(_ sender: Any) {
+        let alertController = UIAlertController(title: "About CFCF", message: "The CFCF is a 501(c)(3) exempt organization and Tennessee registered non-profit, whose mission is to advance the protection of children. Click OK to continue to our website.", preferredStyle: .alert)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        let callAction = UIAlertAction(title: "OK", style: .default) { (action) in
+            let cfcfUrl = URL(string: "http://www.corinafieldcarrollfund.com/")
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(cfcfUrl!, options: [:], completionHandler: nil)
+            } else {
+                UIApplication.shared.openURL(cfcfUrl!)
+            }
+        }
+        
+        alertController.addAction(cancelAction)
+        alertController.addAction(callAction)
+        
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
+    
     
     @IBAction func youtubeButton(_ sender: Any) {
         let url = NSURL(string: "https://www.youtube.com/watch?v=HVRlOiC1uss&list=PLf3DiW4XOaaYSDATIc4tu7aSSfdbd8sej")! as URL

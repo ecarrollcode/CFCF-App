@@ -56,23 +56,13 @@ class ReportCaliViewController: UIViewController {
         let charSet = CharacterSet(charactersIn: "1234567890").inverted
         let unformatted = callButton.currentTitle
         let cleanedString = unformatted!.components(separatedBy: charSet).joined(separator: "")
-        
-        // create and configure alert controller
-        let alertController = UIAlertController(title: unformatted, message: "", preferredStyle: .alert)
-        
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-        let callAction = UIAlertAction(title: "Call", style: .default) { (action) in
-            let number = NSURL(string: "tel://" + cleanedString)! as URL
-            if #available(iOS 10.0, *) {
-                UIApplication.shared.open(number, options: [:], completionHandler: nil)
-            } else {
-                UIApplication.shared.openURL(number)
-            }
-            
+        let number = URL(string: "tel://" + cleanedString)
+
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(number!)
+        } else {
+            UIApplication.shared.openURL(number!)
         }
-        
-        alertController.addAction(cancelAction)
-        alertController.addAction(callAction)
     }
     
     
