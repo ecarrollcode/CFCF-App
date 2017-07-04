@@ -54,9 +54,9 @@ class TrainingViewController: UIViewController, UIScrollViewDelegate {
         }
     }
     
-    func scrollViewWillBeginDecelerating(_ scrollView: UIScrollView) {
-        trainingScrollView.setContentOffset(trainingScrollView.contentOffset, animated: true)
-    }
+//    func scrollViewWillBeginDecelerating(_ scrollView: UIScrollView) {
+//        trainingScrollView.setContentOffset(trainingScrollView.contentOffset, animated: true)
+//    }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         trainingScrollView.contentOffset.y = -60.0
