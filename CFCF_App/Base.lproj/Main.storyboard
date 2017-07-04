@@ -114,11 +114,11 @@
                                 <exclude reference="RaB-VT-Fq4"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="RZO-Hk-kIT"/>
+                                <exclude reference="qu3-Go-Buz"/>
                                 <exclude reference="Aut-bK-99c"/>
                                 <exclude reference="fjQ-do-kep"/>
                                 <exclude reference="zH1-jE-fdC"/>
-                                <exclude reference="RZO-Hk-kIT"/>
-                                <exclude reference="qu3-Go-Buz"/>
                                 <exclude reference="Bdf-W6-mc8"/>
                             </mask>
                         </variation>
@@ -130,11 +130,11 @@
                                 <include reference="RaB-VT-Fq4"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="RZO-Hk-kIT"/>
+                                <include reference="qu3-Go-Buz"/>
                                 <include reference="Aut-bK-99c"/>
                                 <include reference="fjQ-do-kep"/>
                                 <include reference="zH1-jE-fdC"/>
-                                <include reference="RZO-Hk-kIT"/>
-                                <include reference="qu3-Go-Buz"/>
                                 <include reference="Bdf-W6-mc8"/>
                             </mask>
                         </variation>
@@ -653,10 +653,10 @@ Share a Hotline</string>
                         </subviews>
                         <color key="backgroundColor" red="0.96470588239999999" green="0.90196078430000004" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="kKa-Z5-fkd" secondAttribute="trailing" constant="-16" id="Gs0-Ss-H7N"/>
-                            <constraint firstItem="kKa-Z5-fkd" firstAttribute="leading" secondItem="UZg-tA-UTB" secondAttribute="leadingMargin" constant="-16" id="JcD-pU-De2"/>
-                            <constraint firstItem="YQU-Fi-SfA" firstAttribute="top" secondItem="kKa-Z5-fkd" secondAttribute="bottom" id="Yrw-VN-bgd"/>
-                            <constraint firstItem="kKa-Z5-fkd" firstAttribute="top" secondItem="gOf-t6-1ja" secondAttribute="bottom" constant="-64" id="zsn-nO-4jp"/>
+                            <constraint firstItem="kKa-Z5-fkd" firstAttribute="width" secondItem="UZg-tA-UTB" secondAttribute="width" id="GUM-Ui-2Ox"/>
+                            <constraint firstItem="kKa-Z5-fkd" firstAttribute="centerX" secondItem="UZg-tA-UTB" secondAttribute="centerX" id="e9p-48-ZXD"/>
+                            <constraint firstItem="kKa-Z5-fkd" firstAttribute="centerY" secondItem="UZg-tA-UTB" secondAttribute="centerY" id="ts2-5k-GqF"/>
+                            <constraint firstItem="kKa-Z5-fkd" firstAttribute="height" secondItem="UZg-tA-UTB" secondAttribute="height" id="yre-LN-MpR"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Training" id="lPW-Ub-vLr"/>
@@ -883,11 +883,11 @@ case of child abuse.</string>
                                 <exclude reference="BVq-1U-VZp"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="UZ5-gz-qfn"/>
+                                <exclude reference="mDu-AP-5X5"/>
                                 <exclude reference="RFE-q7-hBA"/>
                                 <exclude reference="hob-dN-Zex"/>
                                 <exclude reference="zLL-Y7-4TA"/>
-                                <exclude reference="UZ5-gz-qfn"/>
-                                <exclude reference="mDu-AP-5X5"/>
                                 <exclude reference="wEd-EV-6yI"/>
                             </mask>
                         </variation>
@@ -899,11 +899,11 @@ case of child abuse.</string>
                                 <include reference="z9u-0G-feS"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="UZ5-gz-qfn"/>
+                                <include reference="mDu-AP-5X5"/>
                                 <include reference="RFE-q7-hBA"/>
                                 <include reference="hob-dN-Zex"/>
                                 <include reference="zLL-Y7-4TA"/>
-                                <include reference="UZ5-gz-qfn"/>
-                                <include reference="mDu-AP-5X5"/>
                                 <include reference="wEd-EV-6yI"/>
                             </mask>
                         </variation>
