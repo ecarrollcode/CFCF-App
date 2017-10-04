@@ -25,8 +25,12 @@ class ShareHotlineViewController: UIViewController, MFMessageComposeViewControll
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         messageText.removeAll()
+        switch UIDevice().type {
+            case .iPhone5, .iPhone5S, .iPhone5C:
+                self.sendHotline.titleLabel!.font = self.sendHotline.titleLabel!.font.withSize(17)
+            default: break
+        }
         // set picker deafault to California configurations
         isCalifornia = true
         sendHotline.setTitle("Select a county", for: [.normal])

@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F2300031F8441850010EB8C /* iPadSlide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F2300021F8441850010EB8C /* iPadSlide.xib */; };
+		8F4CD9361F37E27300791617 /* DetectPlatformModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4CD9351F37E27300791617 /* DetectPlatformModel.swift */; };
 		8F5203BE1ED6504D0021A6DE /* LearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5203BD1ED6504D0021A6DE /* LearnViewController.swift */; };
 		8F5203C01ED66A180021A6DE /* TrainingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5203BF1ED66A180021A6DE /* TrainingViewController.swift */; };
+		8F7A45D21F842BB700163E63 /* iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F7A45D11F842BB700163E63 /* iPad.storyboard */; };
 		8F9F93AC1ED2989200FC15C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F93AB1ED2989200FC15C9 /* AppDelegate.swift */; };
 		8F9F93AE1ED2989200FC15C9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F93AD1ED2989200FC15C9 /* HomeViewController.swift */; };
 		8F9F93B11ED2989200FC15C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F9F93AF1ED2989200FC15C9 /* Main.storyboard */; };
@@ -45,9 +48,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8F2300021F8441850010EB8C /* iPadSlide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = iPadSlide.xib; sourceTree = "<group>"; };
+		8F4CD9351F37E27300791617 /* DetectPlatformModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetectPlatformModel.swift; sourceTree = "<group>"; };
 		8F5203BD1ED6504D0021A6DE /* LearnViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnViewController.swift; sourceTree = "<group>"; };
 		8F5203BF1ED66A180021A6DE /* TrainingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingViewController.swift; sourceTree = "<group>"; };
 		8F57FEC41EE78FFB000C3196 /* SwiftOverlays.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftOverlays.framework; path = Carthage/Build/iOS/SwiftOverlays.framework; sourceTree = "<group>"; };
+		8F7A45D11F842BB700163E63 /* iPad.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = iPad.storyboard; sourceTree = "<group>"; };
 		8F9F93A81ED2989200FC15C9 /* CFCF App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CFCF App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F9F93AB1ED2989200FC15C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F9F93AD1ED2989200FC15C9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +139,7 @@
 				8F9F93AB1ED2989200FC15C9 /* AppDelegate.swift */,
 				8F9F93AD1ED2989200FC15C9 /* HomeViewController.swift */,
 				8F9F93AF1ED2989200FC15C9 /* Main.storyboard */,
+				8F7A45D11F842BB700163E63 /* iPad.storyboard */,
 				8F5203BF1ED66A180021A6DE /* TrainingViewController.swift */,
 				8F9F93DB1ED29AB200FC15C9 /* ShareViewController.swift */,
 				8FF10D271EDF62B500B29728 /* GuideViewController.swift */,
@@ -141,6 +148,7 @@
 				8F9F93E31ED29FB400FC15C9 /* ReportViewController.swift */,
 				8F9F93E51ED2A2A600FC15C9 /* ReportCaliViewController.swift */,
 				8F5203BD1ED6504D0021A6DE /* LearnViewController.swift */,
+				8F4CD9351F37E27300791617 /* DetectPlatformModel.swift */,
 				8F9F93DF1ED29C3100FC15C9 /* HotlineData.swift */,
 				8F9F93B21ED2989200FC15C9 /* Assets.xcassets */,
 				8F9F93B41ED2989200FC15C9 /* LaunchScreen.storyboard */,
@@ -171,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				8FC5CC471EDA6E50007628E2 /* Slide.xib */,
+				8F2300021F8441850010EB8C /* iPadSlide.xib */,
 				8FC5CC491EDA6E6D007628E2 /* Slide.swift */,
 			);
 			name = View;
@@ -287,8 +296,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FC5CC481EDA6E51007628E2 /* Slide.xib in Resources */,
+				8F7A45D21F842BB700163E63 /* iPad.storyboard in Resources */,
 				8F9F93B61ED2989200FC15C9 /* LaunchScreen.storyboard in Resources */,
 				8F9F93B31ED2989200FC15C9 /* Assets.xcassets in Resources */,
+				8F2300031F8441850010EB8C /* iPadSlide.xib in Resources */,
 				8F9F93B11ED2989200FC15C9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,6 +330,7 @@
 				8F9F93E21ED29DF700FC15C9 /* ShareCaliHotlineViewController.swift in Sources */,
 				8F5203BE1ED6504D0021A6DE /* LearnViewController.swift in Sources */,
 				8F9F93DE1ED29BB300FC15C9 /* ShareHotlineViewController.swift in Sources */,
+				8F4CD9361F37E27300791617 /* DetectPlatformModel.swift in Sources */,
 				8FF10D281EDF62B500B29728 /* GuideViewController.swift in Sources */,
 				8F9F93DC1ED29AB200FC15C9 /* ShareViewController.swift in Sources */,
 				8F9F93AE1ED2989200FC15C9 /* HomeViewController.swift in Sources */,
@@ -487,11 +499,12 @@
 				IBC_WARNINGS = YES;
 				IBSC_WARNINGS = NO;
 				INFOPLIST_FILE = CFCF_App/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "CFCF-App";
 				PRODUCT_NAME = "CFCF App";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -509,11 +522,12 @@
 				IBC_WARNINGS = YES;
 				IBSC_WARNINGS = NO;
 				INFOPLIST_FILE = CFCF_App/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "CFCF-App";
 				PRODUCT_NAME = "CFCF App";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

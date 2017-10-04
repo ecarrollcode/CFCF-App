@@ -24,6 +24,7 @@ class GuideViewController: UIViewController {
     var questionNum = Int()
     var takeToLearnOrContinue = Bool()
     var takeToReport = Bool()
+    var isIPhone5 = Bool()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,10 +33,24 @@ class GuideViewController: UIViewController {
         takeToLearnOrContinue = false
         takeToReport = false
         
+        switch UIDevice().type {
+            case .iPhone5, .iPhone5S, .iPhone5C:
+                self.isIPhone5 = true
+                self.questionLabel.font = self.questionLabel.font.withSize(19)
+                self.descriptionLabel.font = self.descriptionLabel.font.withSize(14.5)
+                self.actionBtn1.titleLabel!.font = self.actionBtn1.titleLabel!.font.withSize(18)
+                self.actionBtn2.titleLabel!.font = self.actionBtn2.titleLabel!.font.withSize(18)
+                break
+            default:
+                self.isIPhone5 = false
+        }
+        
         welcomeLabel.alpha = 0
         restOfWelcomeLabel.alpha = 0
         descriptionLabel.alpha = 0
         questionLabel.alpha = 0
+        questionLabel.numberOfLines = 0
+        questionLabel.lineBreakMode = .byWordWrapping
         actionBtn1.alpha = 0
         actionBtn2.alpha = 0
         actionBtn2.setTitle("Continue", for: .normal)
@@ -93,15 +108,24 @@ class GuideViewController: UIViewController {
                     }
                 })
             }
-
         })
     }
     
     func fadeOut(btn1Text: String, btn2Text: String, questionLabelText: String, btnToChangeColor: UIButton? = nil,
                  doFadeIn: Bool? = false, labelTextSize: CGFloat? = nil, btnToHide: UIButton? = nil, transition: String? = nil,
                  pulseQuestionText: Bool? = false, simulationMessage: Bool? = false) {
+        
+        var btnToFadeFast = UIButton()
+        
+        if btnToChangeColor?.titleLabel == actionBtn1.titleLabel {
+            btnToFadeFast = actionBtn2
+        } else {
+            btnToFadeFast = actionBtn1
+        }
+
         if btnToChangeColor != nil {
             UIView.animate(withDuration: 0.3, delay: 0, options: .curveLinear, animations: {
+                btnToFadeFast.alpha = 0
                 btnToChangeColor?.backgroundColor = UIColor(red:0.74, green:0.76, blue:0.78, alpha:1.0)
                 btnToChangeColor?.setTitleColor(UIColor.white, for: .normal)
             }, completion: nil)
@@ -157,21 +181,34 @@ class GuideViewController: UIViewController {
             if questionNum == 3 || questionNum == 4 {
                 takeToReport = true
                 let questionNumText = "Please collect the names and phone numbers or other contact details of persons you know of who may have more information.  " +
-                "When you are ready, click below to look up the relevant hotline under Report."
-                self.fadeOutAndBackIn(btn1Text: "", btn2Text: "Report", questionLabelText: questionNumText, btnToChangeColor: actionBtn2, labelTextSize: 17.0,
+                                      "When you are ready, click below to look up the relevant hotline under Report."
+                var sizeOfLabel: CGFloat = 17.0
+                if isIPhone5 {
+                    sizeOfLabel -= 3.0
+                }
+                
+                self.fadeOutAndBackIn(btn1Text: "", btn2Text: "Report", questionLabelText: questionNumText, btnToChangeColor: actionBtn2, labelTextSize: sizeOfLabel,
                                       btnToHide: self.actionBtn1, pulseQuestionText: true)
             }
             
             if questionNum == 2 {
                 questionNum = 4
                 let question4Text = "Do you know this one child's name and an address where the child lives or attends school or day care?"
-                self.fadeOutAndBackIn(btn1Text: "Yes", btn2Text: "No", questionLabelText: question4Text, btnToChangeColor: actionBtn2, labelTextSize: 20.0)
+                var sizeOfLabel: CGFloat = 20.0
+                if isIPhone5 {
+                    sizeOfLabel -= 3.0
+                }
+                self.fadeOutAndBackIn(btn1Text: "Yes", btn2Text: "No", questionLabelText: question4Text, btnToChangeColor: actionBtn2, labelTextSize: sizeOfLabel)
             }
             
             if questionNum == 1 {
                 takeToLearnOrContinue = true
                 let learnText = "It sounds like you are just generally looking to learn about child abuse. Tap Learn below to visit some of our resources. " +
-                "Tap Continue if you would like to go through this interview as a simulation of a real-world concern."
+                                "Tap Continue if you would like to go through this interview as a simulation of a real-world concern."
+                var sizeOfLabel: CGFloat = 17.0
+                if isIPhone5 {
+                    sizeOfLabel -= 3.0
+                }
                 self.fadeOutAndBackIn(btn1Text: "Continue", btn2Text: "Learn", questionLabelText: learnText, btnToChangeColor: actionBtn2, labelTextSize: 17.0)
             }
             
@@ -196,22 +233,38 @@ class GuideViewController: UIViewController {
             takeToLearnOrContinue = false
             questionNum = 0
             let simulationText = "You may now answer the Guide's questions as a simulation."
-            self.fadeOutAndBackIn(btn1Text: "", btn2Text: "", questionLabelText: simulationText, btnToChangeColor: actionBtn1, labelTextSize: 22.0, simulationMessage: true)
+            var sizeOfLabel: CGFloat = 22.0
+            if isIPhone5 {
+                sizeOfLabel -= 3.0
+            }
+            self.fadeOutAndBackIn(btn1Text: "", btn2Text: "", questionLabelText: simulationText, btnToChangeColor: actionBtn1, labelTextSize: sizeOfLabel, simulationMessage: true)
         }
         
         if questionNum == 1 {
             takeToLearnOrContinue = false
             questionNum = 2
             let question2Text = "Are you concerned about more than one child?"
-            self.fadeOutAndBackIn(btn1Text: "Yes", btn2Text: "No", questionLabelText: question2Text, btnToChangeColor: actionBtn1, labelTextSize: 22.0)
+            var sizeOfLabel: CGFloat = 22.0
+            if isIPhone5 {
+                sizeOfLabel -= 3.0
+            }
+            self.fadeOutAndBackIn(btn1Text: "Yes", btn2Text: "No", questionLabelText: question2Text, btnToChangeColor: actionBtn1, labelTextSize: sizeOfLabel)
         } else if questionNum == 2 {
             questionNum = 3
             let question3Text = "Do you know where any of these children is now? Or do you know where any of these children lives or goes to daycare?"
-            self.fadeOutAndBackIn(btn1Text: "Yes", btn2Text: "No", questionLabelText: question3Text, btnToChangeColor: actionBtn1, labelTextSize: 20.0)
+            var sizeOfLabel: CGFloat = 20.0
+            if isIPhone5 {
+                sizeOfLabel -= 3.0
+            }
+            self.fadeOutAndBackIn(btn1Text: "Yes", btn2Text: "No", questionLabelText: question3Text, btnToChangeColor: actionBtn1, labelTextSize: sizeOfLabel)
         } else if questionNum == 3 || questionNum == 4 {
             takeToReport = true
             let reportText = "The situation you describe, with children at risk, requires prompt if not immediate reporting of your concerns. Tap below to lookup the appropriate hotline number."
-            self.fadeOutAndBackIn(btn1Text: "", btn2Text: "Report", questionLabelText: reportText, btnToChangeColor: actionBtn1, labelTextSize: 17.0, btnToHide: self.actionBtn1)
+            var sizeOfLabel: CGFloat = 17.0
+            if isIPhone5 {
+                sizeOfLabel -= 3.0
+            }
+            self.fadeOutAndBackIn(btn1Text: "", btn2Text: "Report", questionLabelText: reportText, btnToChangeColor: actionBtn1, labelTextSize: sizeOfLabel, btnToHide: self.actionBtn1)
         }
     }
     

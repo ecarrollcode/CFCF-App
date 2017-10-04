@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad10_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="6m6-wk-tkM" customClass="Slide" customModule="CFCF_App">
+            <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Header" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L7Q-wA-qUi">
+                    <rect key="frame" x="52" y="54" width="716" height="175"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="175" id="dFb-Qz-kPU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Content" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fjf-O8-PjY">
+                    <rect key="frame" x="58" y="244" width="703" height="681"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4nn-qo-DWa">
+                    <rect key="frame" x="694" y="933" width="120" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31" id="0Jp-aY-a3p"/>
+                        <constraint firstAttribute="width" constant="120" id="WRi-7m-Mzi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.96470588239999999" green="0.90196078430000004" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="L7Q-wA-qUi" firstAttribute="centerX" secondItem="fjf-O8-PjY" secondAttribute="centerX" id="1OD-3d-UGm"/>
+                <constraint firstItem="AmS-KL-Kqg" firstAttribute="bottom" secondItem="fjf-O8-PjY" secondAttribute="bottom" constant="187" id="4qT-x9-6tp"/>
+                <constraint firstItem="L7Q-wA-qUi" firstAttribute="top" secondItem="AmS-KL-Kqg" secondAttribute="top" constant="34" id="Ai2-0l-8UB"/>
+                <constraint firstItem="L7Q-wA-qUi" firstAttribute="leading" secondItem="AmS-KL-Kqg" secondAttribute="leading" constant="52" id="MX1-yC-IWu"/>
+                <constraint firstItem="AmS-KL-Kqg" firstAttribute="bottom" secondItem="4nn-qo-DWa" secondAttribute="bottom" constant="148" id="jAY-rq-3HW"/>
+                <constraint firstItem="AmS-KL-Kqg" firstAttribute="trailing" secondItem="4nn-qo-DWa" secondAttribute="trailing" constant="20" id="p4R-lm-PAs"/>
+                <constraint firstItem="AmS-KL-Kqg" firstAttribute="trailing" secondItem="L7Q-wA-qUi" secondAttribute="trailing" constant="66" id="rOW-xN-F1a"/>
+                <constraint firstItem="fjf-O8-PjY" firstAttribute="leading" secondItem="AmS-KL-Kqg" secondAttribute="leading" constant="58" id="v7Y-6N-XTb"/>
+                <constraint firstItem="fjf-O8-PjY" firstAttribute="top" secondItem="L7Q-wA-qUi" secondAttribute="bottom" constant="15" id="x5w-0p-FcO"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="AmS-KL-Kqg"/>
+            <connections>
+                <outlet property="iPadContent" destination="fjf-O8-PjY" id="4Zu-hy-Avs"/>
+                <outlet property="iPadHeader" destination="L7Q-wA-qUi" id="5nZ-kI-6nu"/>
+                <outlet property="iPadSlideNumLabel" destination="4nn-qo-DWa" id="7Ad-CW-zGA"/>
+            </connections>
+            <point key="canvasLocation" x="66" y="-17"/>
+        </view>
+    </objects>
+</document>

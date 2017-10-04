@@ -21,6 +21,11 @@ class ShareCaliHotlineViewController: UIViewController, MFMessageComposeViewCont
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        switch UIDevice().type {
+            case .iPhone5, .iPhone5S, .iPhone5C:
+                self.sendHotline.titleLabel!.font = self.sendHotline.titleLabel!.font.withSize(17)
+            default: break
+        }
         
         messageText = "Call this number to report child abuse in Los Angeles county: " + HotlineData.countyDict["Los Angeles"]!
         sendHotline.setTitle("Send hotline number", for: [.normal])

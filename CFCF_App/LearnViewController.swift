@@ -12,12 +12,21 @@ class LearnViewController: UIViewController {
     
     @IBOutlet weak var cfcfButton: UIButton!
     @IBOutlet weak var youtubeButton: UIButton!
-    /* Training and Guide buttons will probably lead to other screens,
-      thus no need for IBOutlets/Actions */
+    @IBOutlet weak var trainingBtn: UIButton!
+    @IBOutlet weak var guideBtn: UIButton!
     
+    @IBOutlet weak var iPadYouTubeButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        switch UIDevice().type {
+            case .iPhone5, .iPhone5S, .iPhone5C:
+                self.youtubeButton.titleLabel!.font = self.youtubeButton.titleLabel!.font.withSize(13)
+                self.trainingBtn.titleLabel!.font = self.trainingBtn.titleLabel!.font.withSize(13)
+                self.guideBtn.titleLabel!.font = self.guideBtn.titleLabel!.font.withSize(13)
+                break
+            default: break
+        }
         // Do any additional setup after loading the view.
     }
     

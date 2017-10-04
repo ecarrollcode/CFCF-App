@@ -12,11 +12,19 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    public var onIPad = false
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        let font = UIFont.boldSystemFont(ofSize: 17)
+        var font = UIFont()
+        switch UIDevice().type {
+            case .iPhone5, .iPhone5S, .iPhone5C:
+                font = UIFont.boldSystemFont(ofSize: 15)
+                break
+            default:
+                font = UIFont.boldSystemFont(ofSize: 17)
+        }
         UIBarButtonItem.appearance().setTitleTextAttributes([NSFontAttributeName: font], for: .normal)
         return true
     }

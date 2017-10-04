@@ -14,6 +14,9 @@ class Slide: UIView {
     @IBOutlet weak var content: UILabel!
     @IBOutlet weak var slideNumLabel: UILabel!
 
+    @IBOutlet weak var iPadHeader: UILabel!
+    @IBOutlet weak var iPadContent: UILabel!
+    @IBOutlet weak var iPadSlideNumLabel: UILabel!
     
     class func getArrOfDicts() -> Array<Dictionary<String, String>> {
         var slideArrOfDicts = Array<Dictionary<String, String>>()

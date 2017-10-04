@@ -13,7 +13,7 @@ import Foundation
 class ShareViewController: UIViewController, MFMessageComposeViewControllerDelegate {
 
     @IBOutlet weak var shareApp: UIButton!
-    
+    @IBOutlet weak var shareHotline: UIButton!
     
     @IBAction func shareApp(_ sender: Any) {
         if MFMessageComposeViewController.canSendText() == false {
@@ -35,6 +35,13 @@ class ShareViewController: UIViewController, MFMessageComposeViewControllerDeleg
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        switch UIDevice().type {
+            case .iPhone5, .iPhone5S, .iPhone5C:
+                self.shareHotline.titleLabel!.font = self.shareHotline.titleLabel!.font.withSize(17)
+                self.shareApp.titleLabel!.font = self.shareApp.titleLabel!.font.withSize(17)
+            default: break
+        }
 
         // Do any additional setup after loading the view.
     }

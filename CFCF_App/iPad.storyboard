@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7Zp-lj-lCb">
+    <device id="ipad12_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--HomeViewController-->
+        <scene sceneID="owo-3o-2aH">
+            <objects>
+                <viewController title="HomeViewController" id="csJ-oB-zqf" customClass="HomeViewController" customModule="CFCF_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Aj2-uR-GjX">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cfcf_logo" translatesAutoresizingMaskIntoConstraints="NO" id="sOQ-sY-gs7">
+                                <rect key="frame" x="262" y="388.5" width="500" height="460.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" secondItem="sOQ-sY-gs7" secondAttribute="height" multiplier="90:83" id="KBg-ec-dre"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="500" id="Wat-bt-yMH"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="dLq-kg-Qzf"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xE6-2q-Ya4">
+                                <rect key="frame" x="775" y="592.5" width="110" height="54"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <state key="normal" title="Report">
+                                    <color key="titleColor" red="0.32847653490000001" green="0.685127708" blue="0.34276005700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m06-ny-LaY">
+                                <rect key="frame" x="324" y="883" width="376" height="52"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
+                                <state key="normal" title="Corina Field Carroll Fund">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZaN-D8-UkQ">
+                                <rect key="frame" x="465.5" y="326.5" width="93" height="54"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <state key="normal" title="Learn">
+                                    <color key="titleColor" red="0.32847653490000001" green="0.685127708" blue="0.34276005700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="58W-87-oIy" kind="show" id="5tg-id-bzu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Id-6b-Hcn">
+                                <rect key="frame" x="152.5" y="592.5" width="96" height="54"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <state key="normal" title="Share">
+                                    <color key="titleColor" red="0.32847653490000001" green="0.685127708" blue="0.34276005700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96470588235294119" green="0.90196078431372551" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sOQ-sY-gs7" firstAttribute="centerX" secondItem="qXE-En-Jeh" secondAttribute="centerX" id="0eb-YW-chi"/>
+                            <constraint firstItem="xE6-2q-Ya4" firstAttribute="leading" secondItem="sOQ-sY-gs7" secondAttribute="trailing" constant="13" id="9fk-zI-YOX"/>
+                            <constraint firstItem="sOQ-sY-gs7" firstAttribute="leading" secondItem="4Id-6b-Hcn" secondAttribute="trailing" constant="13" id="ATt-96-sct"/>
+                            <constraint firstItem="m06-ny-LaY" firstAttribute="top" secondItem="sOQ-sY-gs7" secondAttribute="bottom" constant="34" id="Dn4-47-2vg"/>
+                            <constraint firstItem="4Id-6b-Hcn" firstAttribute="centerY" secondItem="sOQ-sY-gs7" secondAttribute="centerY" id="KbS-Pz-oUg"/>
+                            <constraint firstItem="sOQ-sY-gs7" firstAttribute="width" secondItem="sOQ-sY-gs7" secondAttribute="height" multiplier="90:83" id="XtJ-ov-XKb"/>
+                            <constraint firstItem="4Id-6b-Hcn" firstAttribute="baseline" secondItem="xE6-2q-Ya4" secondAttribute="baseline" id="ZF2-rf-mSR"/>
+                            <constraint firstItem="m06-ny-LaY" firstAttribute="centerX" secondItem="qXE-En-Jeh" secondAttribute="centerX" id="bDb-D9-DrC"/>
+                            <constraint firstItem="sOQ-sY-gs7" firstAttribute="top" secondItem="qXE-En-Jeh" secondAttribute="top" constant="324.5" id="eRf-Vh-LeK"/>
+                            <constraint firstItem="sOQ-sY-gs7" firstAttribute="top" secondItem="ZaN-D8-UkQ" secondAttribute="bottom" constant="8" id="sp6-Tb-IMM"/>
+                            <constraint firstItem="ZaN-D8-UkQ" firstAttribute="centerX" secondItem="qXE-En-Jeh" secondAttribute="centerX" id="vtT-Qh-RJ6"/>
+                            <constraint firstItem="qXE-En-Jeh" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="sOQ-sY-gs7" secondAttribute="bottom" constant="400" id="zCF-sp-WL0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qXE-En-Jeh"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Corina Field Carroll Fund" id="w5o-Nz-Wqh"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FAf-W0-yAo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1403" y="-1021"/>
+        </scene>
+        <!--Learn-->
+        <scene sceneID="Xuv-rs-EVS">
+            <objects>
+                <viewController title="Learn" id="58W-87-oIy" customClass="LearnViewController" customModule="CFCF_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A7L-dw-sRp">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ek-AJ-Rf0">
+                                <rect key="frame" x="324" y="907" width="376" height="52"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
+                                <state key="normal" title="Corina Field Carroll Fund">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xiq-bG-Wwh">
+                                <rect key="frame" x="105" y="604.5" width="132" height="54"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <state key="normal" title="Training">
+                                    <color key="titleColor" red="0.32847653490000001" green="0.685127708" blue="0.34276005700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="dzM-3z-GBz" kind="show" id="xat-Fz-eAm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nTI-4D-tjD">
+                                <rect key="frame" x="455.5" y="328" width="113" height="54"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <state key="normal" title="Videos">
+                                    <color key="titleColor" red="0.32847653490000001" green="0.685127708" blue="0.34276005700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="youtubeButton:" destination="58W-87-oIy" eventType="touchUpInside" id="J3c-tu-PWJ"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cfcf_logo" translatesAutoresizingMaskIntoConstraints="NO" id="t44-Ej-eZ0">
+                                <rect key="frame" x="250" y="390" width="524" height="483"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="500" id="1IC-FE-qOZ"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" secondItem="t44-Ej-eZ0" secondAttribute="height" multiplier="90:83" id="CeR-rx-y3x"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="eKV-KP-nGG"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SMq-Dp-h9H">
+                                <rect key="frame" x="787" y="604.5" width="97" height="54"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <state key="normal" title="Guide">
+                                    <color key="titleColor" red="0.32847653490000001" green="0.685127708" blue="0.34276005700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96470588239999999" green="0.90196078430000004" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.32847653490000001" green="0.6118921638" blue="0.14109657910000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SMq-Dp-h9H" firstAttribute="leading" secondItem="t44-Ej-eZ0" secondAttribute="trailing" constant="13" id="A2q-Np-tk1"/>
+                            <constraint firstItem="t44-Ej-eZ0" firstAttribute="centerX" secondItem="RTE-Jv-ltY" secondAttribute="centerX" id="I0p-D9-jC2"/>
+                            <constraint firstItem="t44-Ej-eZ0" firstAttribute="top" secondItem="nTI-4D-tjD" secondAttribute="bottom" constant="8" id="KE6-Vu-qkL"/>
+                            <constraint firstItem="t44-Ej-eZ0" firstAttribute="width" secondItem="t44-Ej-eZ0" secondAttribute="height" multiplier="90:83" id="LHf-Hj-0b1"/>
+                            <constraint firstItem="t44-Ej-eZ0" firstAttribute="top" secondItem="RTE-Jv-ltY" secondAttribute="top" constant="326" id="Src-Kz-cnE"/>
+                            <constraint firstItem="SMq-Dp-h9H" firstAttribute="centerY" secondItem="t44-Ej-eZ0" secondAttribute="centerY" id="Xne-OC-Hdu"/>
+                            <constraint firstItem="0ek-AJ-Rf0" firstAttribute="centerX" secondItem="RTE-Jv-ltY" secondAttribute="centerX" id="Z0H-rM-T32"/>
+                            <constraint firstItem="0ek-AJ-Rf0" firstAttribute="top" secondItem="t44-Ej-eZ0" secondAttribute="bottom" constant="34" id="cX3-jP-lTk"/>
+                            <constraint firstItem="RTE-Jv-ltY" firstAttribute="trailing" secondItem="t44-Ej-eZ0" secondAttribute="trailing" constant="250" id="nMl-mt-Kex"/>
+                            <constraint firstItem="t44-Ej-eZ0" firstAttribute="width" relation="lessThanOrEqual" secondItem="t44-Ej-eZ0" secondAttribute="height" multiplier="90:83" id="or1-B2-fpG"/>
+                            <constraint firstItem="t44-Ej-eZ0" firstAttribute="leading" secondItem="xiq-bG-Wwh" secondAttribute="trailing" constant="13" id="rWB-bj-0Bk"/>
+                            <constraint firstItem="nTI-4D-tjD" firstAttribute="centerX" secondItem="RTE-Jv-ltY" secondAttribute="centerX" id="sB3-SF-V6o"/>
+                            <constraint firstItem="xiq-bG-Wwh" firstAttribute="centerY" secondItem="t44-Ej-eZ0" secondAttribute="centerY" id="xcz-oh-yik"/>
+                            <constraint firstItem="xiq-bG-Wwh" firstAttribute="baseline" secondItem="SMq-Dp-h9H" secondAttribute="baseline" id="ziH-DF-G1s"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RTE-Jv-ltY"/>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="backButton" value="Back"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="iPadYouTubeButton" destination="nTI-4D-tjD" id="zDS-Yl-2TS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qEI-cr-PgE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-669" y="-1010"/>
+        </scene>
+        <!--Training-->
+        <scene sceneID="vkk-I1-vm9">
+            <objects>
+                <viewController title="Training" id="dzM-3z-GBz" customClass="TrainingViewController" customModule="CFCF_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yxj-WY-Uqi">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CWd-XP-lCM">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96470588239999999" green="0.90196078430000004" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CWd-XP-lCM" firstAttribute="centerX" secondItem="yxj-WY-Uqi" secondAttribute="centerX" id="6iS-PL-62A"/>
+                            <constraint firstItem="CWd-XP-lCM" firstAttribute="width" secondItem="yxj-WY-Uqi" secondAttribute="width" id="A89-lJ-5vE"/>
+                            <constraint firstItem="CWd-XP-lCM" firstAttribute="height" secondItem="yxj-WY-Uqi" secondAttribute="height" id="clt-wB-NFU"/>
+                            <constraint firstItem="CWd-XP-lCM" firstAttribute="centerY" secondItem="yxj-WY-Uqi" secondAttribute="centerY" id="meO-3R-pE4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ggh-tK-b8k"/>
+                    </view>
+                    <connections>
+                        <outlet property="iPadTrainingScrollView" destination="CWd-XP-lCM" id="j0G-U6-zae"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O0t-aR-k6y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="221" y="-1077"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="CaN-9N-VOj">
+            <objects>
+                <navigationController id="7Zp-lj-lCb" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5Kl-08-TcT">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="csJ-oB-zqf" kind="relationship" relationship="rootViewController" id="PvT-DU-yQS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZWr-ZA-nLq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2322" y="-1049"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cfcf_logo" width="850" height="850"/>
+    </resources>
+    <color key="tintColor" red="0.32847653490000001" green="0.685127708" blue="0.34276005700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</document>

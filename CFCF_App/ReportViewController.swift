@@ -21,6 +21,11 @@ class ReportViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        switch UIDevice().type {
+            case .iPhone5, .iPhone5S, .iPhone5C:
+                self.callOrUrlButton.titleLabel!.font = self.callOrUrlButton.titleLabel!.font.withSize(17)
+            default: break
+        }
 
         // initial dial number + selection set for California
         isCalifornia = true

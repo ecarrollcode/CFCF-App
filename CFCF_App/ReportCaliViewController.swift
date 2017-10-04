@@ -19,6 +19,11 @@ class ReportCaliViewController: UIViewController {
     //MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        switch UIDevice().type {
+            case .iPhone5, .iPhone5S, .iPhone5C:
+                self.callButton.titleLabel!.font = self.callButton.titleLabel!.font.withSize(17)
+            default: break
+        }
         
         // Initial dial number + selection set for Los Angeles county
         callButton.setTitle(HotlineData.countyDict["Los Angeles"], for: [.normal])
