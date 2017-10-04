@@ -2,4 +2,4 @@
 
 Repo for the Corina Field Carroll Fund app.
 
-[View the app on the App Store.](https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1245542351&mt=8 "CFCF") to view the app on iTunes/the iOS App Store.
+[View the app on the App Store.](https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1245542351&mt=8 "CFCF")
